@@ -7,21 +7,18 @@ public class Solution1 {
 
     public static void main(String[] args) {
         System.out.println(containsDistinct(List.of(23, 22, 7, 8, 7, 22, 50, 22)));
-        getNoOfOccurence(List.of("Shubham", "Sharma", "Anish", "Sharma", "shubham"));
+         getNoOfOccurence(List.of("Shubham", "Sharma", "Anish", "Sharma", "shubham"));
         getNoOfOccurence("Shubhham");
     }
 
     public static List<Integer> containsDistinct(List<Integer> list) {
         List<Integer> distinctList = new ArrayList<>();
         List<Integer> duplicateList = new ArrayList<>();
-        Map<Character,Integer> map = new HashMap<>();
-        for(Map.Entry<Character,Integer> maps:map.entrySet()){
-
-        }
         for (int value : list) {
             if (!distinctList.contains(value)) {
                 distinctList.add(value);
             } else {
+                if(!duplicateList.contains(value))
                 duplicateList.add(value);
             }
         }
@@ -74,6 +71,7 @@ public class Solution1 {
                 counted[charValue] = true;
                 // Print the count of the character
                 System.out.println(charValue + ":" + count);
+
             }
         }
     }

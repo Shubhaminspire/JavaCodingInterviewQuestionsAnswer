@@ -11,7 +11,8 @@ public class SwapTwoNumberUsingThirdVariable {
         swapTwoNumbers(list);
         swapTwoNumbers(arr);
         SwapTwoNumberUsingThirdVariable swapNumbersWithoutTempVariable = new SwapTwoNumberUsingThirdVariable();
-        swapNumbersWithoutTempVariable.swapNumbersWithoutTempVariable(45,56);
+        swapNumbersWithoutTempVariable.swapNumbersWithoutTempVariable(45, 56);
+        findLargestNumber(12,10);
     }
 
 
@@ -52,6 +53,12 @@ public class SwapTwoNumberUsingThirdVariable {
     }
 
     // Swap two numbers without using temp variable
+    // 4 and 5 i.e a and b
+    // a = a+ b = 4 + 5 = 9
+    // b = a-b = 9 - 5 = 4
+    // a = a - b = 9- 4 = 5
+
+
     public void swapNumbersWithoutTempVariable(int x, int y) {
         System.out.println("The numbers before swap are: " + x + " and " + y);
         x = x + y;
@@ -60,4 +67,12 @@ public class SwapTwoNumberUsingThirdVariable {
         System.out.println("The numbers after swap are: " + x + " and " + y);
     }
 
+    // Find largest without using if condition
+
+    public static void findLargestNumber(int a, int b) {
+        int largest = a > b ? a : b;
+        System.out.println("largest is: "+largest);
+
+
+    }
 }

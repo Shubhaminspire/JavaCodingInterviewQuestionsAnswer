@@ -54,6 +54,6 @@ public class FindSecondMaxElement {
         } else {
             throw new RuntimeException("Invalid size for the list. should be equal or greater than 2. But actual size is: " + list.size());
         }
-        return linkedHashSet.stream().collect(Collectors.toList()).get(1);
+        return linkedHashSet.stream().toList().get(1);
     }
 }
